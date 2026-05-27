@@ -1,0 +1,36 @@
+{
+  "name": "@weaver/mcp-ecology",
+  "version": "1.0.0",
+  "description": "MCP server for Weaver E9 (泛微OA) API integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "weaver-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "weaver",
+    "ecology",
+    "泛微",
+    "OA"
+  ],
+  "author": "tanzhangjia",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "node-forge": "^1.3.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/node-forge": "^1.3.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
